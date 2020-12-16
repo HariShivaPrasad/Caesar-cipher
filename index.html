@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Goest</title>
+    <link rel="stylesheet" href="elements/css/style.css">
+    <link rel="stylesheet" href="elements/css/w3.css">
+</head>
+<body>
+  <div class="w3-light-grey w3-padding-32 w3-center">
+    <h2 class="w3-jumbo">Caesar Cipher</h2>
+  </div>
+
+  <div class="w3-container">
+    
+      <h2>Select Encryption/Decryption</h2>
+      <p>
+      <input class="w3-radio" type="radio" name="operation" value="1" checked>
+      <label>Encryption</label></p>
+      <p>
+      <input class="w3-radio" type="radio" name="operation" value="2">
+      <label>Decryption</label></p>
+      <p>
+
+
+        <select name="hashValue" id="hash">
+          <option value="" disabled selected>Enter your hash value</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="25">24</option>
+            <option value="25">25</option>
+        </select>
+    
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <label>
+        <div class="myBtnStyle">
+          <button class="w3-button w3-black" id="startButton" onclick="start()">Start</button>
+        </div>
+      <textarea placeholder="Enter text..." id="userInput"></textarea>
+    </div>
+    <div class="w3-half">
+      <label>
+        <div class="myBtnStyle tooltip">
+          <button class="w3-button w3-blue" onclick="copyText()" onmouseout="outFunc()">Copy</button>
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        </div>
+      </label>
+      <textarea placeholder="Copy this..." id="ourOutput"></textarea>
+    </div>
+  </div>
+
+  <div class="w3-container w3-teal myFooterStyle">
+    <h5>&#169; Reserved</h5>
+    <p>Made by Hari prasad and Vishnu Shivalal</p>
+  </div>
+        
+
+  <script src="elements/js/scripte.js"></script>
+</body>
+</html>
